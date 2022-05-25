@@ -1,0 +1,23 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+package ${symbol_dollar}{package.ServiceImpl};
+
+import ${symbol_dollar}{package.Entity}.${symbol_dollar}{entity};
+import ${symbol_dollar}{package.Mapper}.${symbol_dollar}{table.mapperName};
+import ${symbol_dollar}{package.Service}.${symbol_dollar}{table.serviceName};
+import ${symbol_dollar}{superServiceImplClassPackage};
+import org.springframework.stereotype.Service;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+
+
+/**
+ * ${symbol_dollar}!{table.comment} service实现类
+ *
+ * @author ${symbol_dollar}{author}
+ * @since ${symbol_dollar}{date}
+ */
+@Service
+public class ${symbol_dollar}{table.serviceImplName} extends ServiceImpl<${symbol_dollar}{table.mapperName}, ${symbol_dollar}{entity}>implements ${symbol_dollar}{table.serviceName} {
+
+}

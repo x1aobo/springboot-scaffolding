@@ -1,0 +1,172 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ea2f267d-f1bc-445b-a24c-49544551efb6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:${symbol_escape}maven${symbol_escape}repo" />
+        <option name="userSettingsFile" value="C:${symbol_escape}Program Files${symbol_escape}apache-maven-3.8.1${symbol_escape}conf${symbol_escape}settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="2587AJvggJ1Ulq5Y2WCPU4871z7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/core/service/src/main/java/${packageInPathFormat}/${artifactId}/core/service" />
+    <property name="last_opened_file_path" value="${symbol_dollar}PROJECT_DIR${symbol_dollar}/../../mybatis-generator-maven-plugin" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:${symbol_escape}idea-workspace${symbol_escape}template${symbol_escape}${artifactId}${symbol_escape}app${symbol_escape}common${symbol_escape}dal${symbol_escape}src${symbol_escape}main${symbol_escape}resources${symbol_escape}template${symbol_escape}vm" />
+      <recent name="C:${symbol_escape}idea-workspace${symbol_escape}template${symbol_escape}${artifactId}${symbol_escape}app${symbol_escape}common${symbol_escape}dal${symbol_escape}src${symbol_escape}main${symbol_escape}resources${symbol_escape}template.vm${symbol_escape}vm" />
+      <recent name="C:${symbol_escape}idea-workspace${symbol_escape}template${symbol_escape}${artifactId}${symbol_escape}app${symbol_escape}common${symbol_escape}dal${symbol_escape}src${symbol_escape}main${symbol_escape}resources" />
+      <recent name="C:${symbol_escape}idea-workspace${symbol_escape}template${symbol_escape}${artifactId}${symbol_escape}app${symbol_escape}common${symbol_escape}dal${symbol_escape}src" />
+      <recent name="C:${symbol_escape}idea-workspace${symbol_escape}template${symbol_escape}${artifactId}${symbol_escape}app${symbol_escape}bootstrap${symbol_escape}src${symbol_escape}main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="${package}.${artifactId}.core" />
+      <recent name="${package}.${artifactId}.common.utils.consts" />
+      <recent name="${package}.${artifactId}.core.model" />
+      <recent name="${package}.${artifactId}.common.service.facade.dto" />
+      <recent name="${package}.${artifactId}.common.service.facade.enums" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean:clean" />
+      <command value="mvn compile" />
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="GeneratorCodeUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="${package}.${artifactId}.common.dal.generator.GeneratorCodeUtil" />
+      <module name="${artifactId}-common-dal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="${package}.${artifactId}.common.dal.generator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="${artifactId}-bootstrap" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="${package}.bootstrap.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GeneratorCodeUtil" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea2f267d-f1bc-445b-a24c-49544551efb6" name="Default Changelist" comment="" />
+      <created>1644896718342</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644896718342</updated>
+      <workItem from="1644896719482" duration="121000" />
+      <workItem from="1644896908945" duration="24445000" />
+      <workItem from="1644999506118" duration="12592000" />
+      <workItem from="1645150370166" duration="11193000" />
+      <workItem from="1645407828508" duration="4747000" />
+      <workItem from="1645507947402" duration="971000" />
+      <workItem from="1645521310928" duration="5888000" />
+      <workItem from="1645757969978" duration="60000" />
+      <workItem from="1645770537382" duration="441000" />
+      <workItem from="1646107222309" duration="609000" />
+      <workItem from="1646373667227" duration="5365000" />
+      <workItem from="1646616646098" duration="888000" />
+      <workItem from="1646722770381" duration="1144000" />
+      <workItem from="1646875811745" duration="595000" />
+      <workItem from="1646965200764" duration="1196000" />
+      <workItem from="1647002888639" duration="56000" />
+      <workItem from="1647502737484" duration="4240000" />
+      <workItem from="1647824563195" duration="246000" />
+      <workItem from="1647826962589" duration="734000" />
+      <workItem from="1647910417233" duration="1585000" />
+      <workItem from="1648173269849" duration="2392000" />
+      <workItem from="1648199468442" duration="1636000" />
+      <workItem from="1648429322218" duration="982000" />
+      <workItem from="1648431659663" duration="2239000" />
+      <workItem from="1648514944808" duration="601000" />
+      <workItem from="1651200244359" duration="886000" />
+      <workItem from="1651201204701" duration="2154000" />
+      <workItem from="1651741652403" duration="7139000" />
+      <workItem from="1651798101535" duration="3183000" />
+      <workItem from="1653394111415" duration="607000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

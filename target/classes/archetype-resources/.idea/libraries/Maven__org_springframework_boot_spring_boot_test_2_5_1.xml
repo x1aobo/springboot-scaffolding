@@ -1,0 +1,16 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<component name="libraryTable">
+  <library name="Maven: org.springframework.boot:spring-boot-test:2.5.1">
+    <CLASSES>
+      <root url="jar://${symbol_dollar}PROJECT_DIR${symbol_dollar}/../../../maven/repo/org/springframework/boot/spring-boot-test/2.5.1/spring-boot-test-2.5.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://${symbol_dollar}PROJECT_DIR${symbol_dollar}/../../../maven/repo/org/springframework/boot/spring-boot-test/2.5.1/spring-boot-test-2.5.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://${symbol_dollar}PROJECT_DIR${symbol_dollar}/../../../maven/repo/org/springframework/boot/spring-boot-test/2.5.1/spring-boot-test-2.5.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

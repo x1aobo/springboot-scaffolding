@@ -1,0 +1,16 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<component name="libraryTable">
+  <library name="Maven: org.junit.jupiter:junit-jupiter-params:5.7.2">
+    <CLASSES>
+      <root url="jar://${symbol_dollar}PROJECT_DIR${symbol_dollar}/../../../maven/repo/org/junit/jupiter/junit-jupiter-params/5.7.2/junit-jupiter-params-5.7.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://${symbol_dollar}PROJECT_DIR${symbol_dollar}/../../../maven/repo/org/junit/jupiter/junit-jupiter-params/5.7.2/junit-jupiter-params-5.7.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://${symbol_dollar}PROJECT_DIR${symbol_dollar}/../../../maven/repo/org/junit/jupiter/junit-jupiter-params/5.7.2/junit-jupiter-params-5.7.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

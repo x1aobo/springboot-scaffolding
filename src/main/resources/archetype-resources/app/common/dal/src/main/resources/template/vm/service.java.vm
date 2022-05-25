@@ -1,0 +1,22 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+package ${symbol_dollar}{package.Service};
+
+import ${symbol_dollar}{package.Entity}.${symbol_dollar}{entity};
+import ${symbol_dollar}{superServiceClassPackage};
+import com.baomidou.mybatisplus.extension.service.IService;
+
+/**
+ * ${symbol_dollar}!{table.comment}
+ *
+ * @author ${symbol_dollar}{author}
+ * @since ${symbol_dollar}{date}
+ */
+${symbol_pound}if(${symbol_dollar}{kotlin})
+interface ${symbol_dollar}{table.serviceName} : ${symbol_dollar}{superServiceClass}<${symbol_dollar}{entity}>
+${symbol_pound}else
+public interface ${symbol_dollar}{table.serviceName} extends IService<${symbol_dollar}{entity}> {
+
+}
+${symbol_pound}end

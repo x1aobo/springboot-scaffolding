@@ -1,0 +1,62 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Annotation profile for ${artifactId}-parent" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="${symbol_dollar}PROJECT_DIR${symbol_dollar}/../../../maven/repo/org/mapstruct/mapstruct/1.4.1.Final/mapstruct-1.4.1.Final.jar" />
+          <entry name="${symbol_dollar}PROJECT_DIR${symbol_dollar}/../../../maven/repo/org/mapstruct/mapstruct-processor/1.4.1.Final/mapstruct-processor-1.4.1.Final.jar" />
+          <entry name="${symbol_dollar}PROJECT_DIR${symbol_dollar}/../../../maven/repo/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
+          <entry name="${symbol_dollar}PROJECT_DIR${symbol_dollar}/../../../maven/repo/org/projectlombok/lombok-mapstruct-binding/0.2.0/lombok-mapstruct-binding-0.2.0.jar" />
+        </processorPath>
+        <module name="${artifactId}-biz-shared" />
+        <module name="${artifactId}-common-dal" />
+        <module name="${artifactId}-biz-service-impl" />
+        <module name="${artifactId}-common-service-integration" />
+        <module name="${artifactId}-test" />
+        <module name="${artifactId}-bootstrap" />
+        <module name="${artifactId}-common-service-facade" />
+        <module name="${artifactId}-core-service" />
+        <module name="${artifactId}-web" />
+        <module name="${artifactId}-common-util" />
+        <module name="${artifactId}-core-model" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="${artifactId}" target="1.8" />
+      <module name="${artifactId}-biz-service-impl" target="1.8" />
+      <module name="${artifactId}-biz-shared" target="1.8" />
+      <module name="${artifactId}-bootstrap" target="1.8" />
+      <module name="${artifactId}-common-dal" target="1.8" />
+      <module name="${artifactId}-common-service-facade" target="1.8" />
+      <module name="${artifactId}-common-service-integration" target="1.8" />
+      <module name="${artifactId}-common-util" target="1.8" />
+      <module name="${artifactId}-core-model" target="1.8" />
+      <module name="${artifactId}-core-service" target="1.8" />
+      <module name="${artifactId}-test" target="1.8" />
+      <module name="${artifactId}-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="${artifactId}-biz-service-impl" options="-parameters" />
+      <module name="${artifactId}-biz-shared" options="-parameters" />
+      <module name="${artifactId}-bootstrap" options="-parameters" />
+      <module name="${artifactId}-common-dal" options="-parameters" />
+      <module name="${artifactId}-common-service-facade" options="-parameters" />
+      <module name="${artifactId}-common-service-integration" options="-parameters" />
+      <module name="${artifactId}-common-util" options="-parameters" />
+      <module name="${artifactId}-core-model" options="-parameters" />
+      <module name="${artifactId}-core-service" options="-parameters" />
+      <module name="${artifactId}-test" options="-parameters" />
+      <module name="${artifactId}-web" options="-parameters" />
+    </option>
+  </component>
+</project>

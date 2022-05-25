@@ -1,0 +1,22 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://${symbol_dollar}PROJECT_DIR${symbol_dollar}/${artifactId}.iml" filepath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/${artifactId}.iml" />
+      <module fileurl="file://${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/biz/service-impl/${artifactId}-biz-service-impl.iml" filepath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/biz/service-impl/${artifactId}-biz-service-impl.iml" />
+      <module fileurl="file://${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/biz/shared/${artifactId}-biz-shared.iml" filepath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/biz/shared/${artifactId}-biz-shared.iml" />
+      <module fileurl="file://${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/bootstrap/${artifactId}-bootstrap.iml" filepath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/bootstrap/${artifactId}-bootstrap.iml" />
+      <module fileurl="file://${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/common/dal/${artifactId}-common-dal.iml" filepath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/common/dal/${artifactId}-common-dal.iml" />
+      <module fileurl="file://${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/common/service/facade/${artifactId}-common-service-facade.iml" filepath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/common/service/facade/${artifactId}-common-service-facade.iml" />
+      <module fileurl="file://${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/common/service/integration/${artifactId}-common-service-integration.iml" filepath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/common/service/integration/${artifactId}-common-service-integration.iml" />
+      <module fileurl="file://${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/common/util/${artifactId}-common-util.iml" filepath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/common/util/${artifactId}-common-util.iml" />
+      <module fileurl="file://${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/core/model/${artifactId}-core-model.iml" filepath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/core/model/${artifactId}-core-model.iml" />
+      <module fileurl="file://${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/core/service/${artifactId}-core-service.iml" filepath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/core/service/${artifactId}-core-service.iml" />
+      <module fileurl="file://${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/test/${artifactId}-test.iml" filepath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/test/${artifactId}-test.iml" />
+      <module fileurl="file://${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/web/${artifactId}-web.iml" filepath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/web/${artifactId}-web.iml" />
+    </modules>
+  </component>
+</project>

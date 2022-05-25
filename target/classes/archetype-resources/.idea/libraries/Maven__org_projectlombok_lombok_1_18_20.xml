@@ -1,0 +1,16 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<component name="libraryTable">
+  <library name="Maven: org.projectlombok:lombok:1.18.20">
+    <CLASSES>
+      <root url="jar://${symbol_dollar}PROJECT_DIR${symbol_dollar}/../../../maven/repo/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://${symbol_dollar}PROJECT_DIR${symbol_dollar}/../../../maven/repo/org/projectlombok/lombok/1.18.20/lombok-1.18.20-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://${symbol_dollar}PROJECT_DIR${symbol_dollar}/../../../maven/repo/org/projectlombok/lombok/1.18.20/lombok-1.18.20-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

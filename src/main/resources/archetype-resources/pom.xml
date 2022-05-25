@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.5.1</version>
+    </parent>
+    <groupId>${groupId}</groupId>
+    <artifactId>${artifactId}</artifactId>
+    <version>${version}</version>
+    <name>${artifactId}-parent</name>
+    <description>${artifactId} project for Spring Boot</description>
+    <packaging>pom</packaging>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <org.mapstruct.version>1.4.1.Final</org.mapstruct.version>
+        <lombok.mapstruct.binding.version>0.2.0</lombok.mapstruct.binding.version>
+        <org.lombok.version>1.18.20</org.lombok.version>
+        <maven.surefire.version>2.20</maven.surefire.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>${groupId}</groupId>
+                <artifactId>${rootArtifactId}-bootstrap</artifactId>
+                <version>${version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${groupId}</groupId>
+                <artifactId>${rootArtifactId}-web</artifactId>
+                <version>${version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${groupId}</groupId>
+                <artifactId>${rootArtifactId}-biz-service-impl</artifactId>
+                <version>${version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${groupId}</groupId>
+                <artifactId>${rootArtifactId}-biz-shared</artifactId>
+                <version>${version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${groupId}</groupId>
+                <artifactId>${rootArtifactId}-core-model</artifactId>
+                <version>${version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${groupId}</groupId>
+                <artifactId>${rootArtifactId}-core-service</artifactId>
+                <version>${version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${groupId}</groupId>
+                <artifactId>${rootArtifactId}-common-service-facade</artifactId>
+                <version>${version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${groupId}</groupId>
+                <artifactId>${rootArtifactId}-common-service-integration</artifactId>
+                <version>${version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${groupId}</groupId>
+                <artifactId>${rootArtifactId}-common-util</artifactId>
+                <version>${version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${groupId}</groupId>
+                <artifactId>${rootArtifactId}-common-dal</artifactId>
+                <version>${version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${org.mapstruct.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>19.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${org.lombok.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.12.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-lang</groupId>
+                <artifactId>commons-lang</artifactId>
+                <version>2.6</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.30</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>3.4.3.4</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-generator</artifactId>
+                <version>3.5.0</version>
+            </dependency>
+            <!-- ģ������ -->
+            <dependency>
+                <groupId>org.apache.velocity</groupId>
+                <artifactId>velocity-engine-core</artifactId>
+                <version>2.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.73</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+
+    <build>
+        <plugins>
+            <!-- 编译配置插件 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>UTF-8</encoding>
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>org.mapstruct</groupId>
+                            <artifactId>mapstruct</artifactId>
+                            <version>${org.mapstruct.version}</version>
+                        </path>
+                        <path>
+                            <groupId>org.mapstruct</groupId>
+                            <artifactId>mapstruct-processor</artifactId>
+                            <version>${org.mapstruct.version}</version>
+                        </path>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>${org.lombok.version}</version>
+                        </path>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok-mapstruct-binding</artifactId>
+                            <version>${lombok.mapstruct.binding.version}</version>
+                        </path>
+                    </annotationProcessorPaths>
+                </configuration>
+            </plugin>
+
+            <!-- 测试用例执行插件 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven.surefire.version}</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.surefire</groupId>
+                        <artifactId>surefire-junit47</artifactId>
+                        <version>${maven.surefire.version}</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <!--配置是否跳过测试用例执行-->
+                    <skipTests>true</skipTests>
+                    <includes>
+                        <include>**/*Test.java</include>
+                        <include>**/*Tests.java</include>
+                    </includes>
+                    <excludes>
+                        <exclude>**/Abstract*.java</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+
+            <!-- 源码打包插件 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.1.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <modules>
+        <module>app/core/service</module>
+        <module>app/core/model</module>
+        <module>app/biz/shared</module>
+        <module>app/biz/service-impl</module>
+        <module>app/common/util</module>
+        <module>app/common/service/facade</module>
+        <module>app/common/service/integration</module>
+        <module>app/common/dal</module>
+        <module>app/web</module>
+        <module>app/test</module>
+        <module>app/bootstrap</module>
+    </modules>
+</project>

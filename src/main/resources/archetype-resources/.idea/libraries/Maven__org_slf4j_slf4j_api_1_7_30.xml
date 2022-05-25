@@ -1,0 +1,16 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<component name="libraryTable">
+  <library name="Maven: org.slf4j:slf4j-api:1.7.30">
+    <CLASSES>
+      <root url="jar://${symbol_dollar}PROJECT_DIR${symbol_dollar}/../../../maven/repo/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://${symbol_dollar}PROJECT_DIR${symbol_dollar}/../../../maven/repo/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://${symbol_dollar}PROJECT_DIR${symbol_dollar}/../../../maven/repo/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

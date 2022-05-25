@@ -1,0 +1,18 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/biz/service-impl/src/main/java" charset="UTF-8" />
+    <file url="file://${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/biz/shared/src/main/java" charset="UTF-8" />
+    <file url="file://${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/bootstrap/src/main/java" charset="UTF-8" />
+    <file url="file://${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/common/dal/src/main/java" charset="UTF-8" />
+    <file url="file://${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/common/service/facade/src/main/java" charset="UTF-8" />
+    <file url="file://${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/common/service/integration/src/main/java" charset="UTF-8" />
+    <file url="file://${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/common/util/src/main/java" charset="UTF-8" />
+    <file url="file://${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/core/model/src/main/java" charset="UTF-8" />
+    <file url="file://${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/core/service/src/main/java" charset="UTF-8" />
+    <file url="file://${symbol_dollar}PROJECT_DIR${symbol_dollar}/app/web/src/main/java" charset="UTF-8" />
+  </component>
+</project>

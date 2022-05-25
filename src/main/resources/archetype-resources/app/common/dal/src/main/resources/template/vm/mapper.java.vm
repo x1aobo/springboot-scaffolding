@@ -1,0 +1,22 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+package ${symbol_dollar}{package.Mapper};
+
+
+import ${symbol_dollar}{package.Entity}.${symbol_dollar}{entity};
+import ${symbol_dollar}{superMapperClassPackage};
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+
+/**
+ * ${symbol_dollar}!{table.comment} Mapper 接口
+ *
+ * @author ${symbol_dollar}{author}
+ * @since ${symbol_dollar}{date}
+ */
+${symbol_pound}if(${symbol_dollar}{kotlin})
+interface ${symbol_dollar}{table.mapperName} : ${symbol_dollar}{superMapperClass}<${symbol_dollar}{entity}>
+${symbol_pound}else
+public interface ${symbol_dollar}{table.mapperName} extends BaseMapper<${symbol_dollar}{entity}> {
+}
+${symbol_pound}end

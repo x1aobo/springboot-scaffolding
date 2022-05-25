@@ -1,0 +1,133 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+package ${symbol_dollar}{package.Entity};
+
+${symbol_pound}foreach(${symbol_dollar}pkg in ${symbol_dollar}{table.importPackages})
+import ${symbol_dollar}{pkg};
+${symbol_pound}end
+${symbol_pound}if(${symbol_dollar}{cfg.entityLombokModel})
+${symbol_pound}end
+
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+/**
+ * ${symbol_dollar}!{table.comment}
+ *
+ * @author ${symbol_dollar}{author}
+ * @since ${symbol_dollar}{date}
+ */
+${symbol_pound}if(${symbol_dollar}{cfg.entityLombokModel})
+@Data
+${symbol_pound}if(${symbol_dollar}{superEntityClass})
+@EqualsAndHashCode(callSuper = true)
+${symbol_pound}else
+@EqualsAndHashCode(callSuper = false)
+${symbol_pound}end
+@Accessors(chain = true)
+${symbol_pound}end
+
+@TableName("${symbol_dollar}{table.name}")
+@Data
+@EqualsAndHashCode(callSuper = false)
+public class ${symbol_dollar}{entity} extends BaseDO {
+${symbol_pound}${symbol_pound} ----------  BEGIN 字段循环遍历  ----------
+${symbol_pound}foreach(${symbol_dollar}field in ${symbol_dollar}{table.fields})
+${symbol_pound}if(${symbol_dollar}{field.keyFlag})
+${symbol_pound}set(${symbol_dollar}keyPropertyName=${symbol_dollar}{field.propertyName})
+${symbol_pound}end
+
+${symbol_pound}if("${symbol_dollar}!field.comment" != "")
+    /**
+     * ${symbol_dollar}{field.comment}
+     */
+${symbol_pound}end
+${symbol_pound}if(${symbol_dollar}{field.keyFlag})
+${symbol_pound}${symbol_pound} 主键
+${symbol_pound}if(${symbol_dollar}{field.keyIdentityFlag})
+    @TableId(value = "${symbol_dollar}{field.name}", type = IdType.AUTO)
+${symbol_pound}elseif(!${symbol_dollar}null.isNull(${symbol_dollar}{idType}) && "${symbol_dollar}!idType" != "")
+    @TableId(value = "${symbol_dollar}{field.name}", type = IdType.${symbol_dollar}{idType})
+${symbol_pound}elseif(${symbol_dollar}{field.convert})
+    @TableId("${symbol_dollar}{field.name}")
+${symbol_pound}end
+
+${symbol_pound}${symbol_pound} 普通字段
+${symbol_pound}elseif(${symbol_dollar}{field.fill})
+${symbol_pound}${symbol_pound} -----   存在字段填充设置   -----
+${symbol_pound}if(${symbol_dollar}{field.convert})
+    @TableField(value = "${symbol_dollar}{field.name}", fill = FieldFill.${symbol_dollar}{field.fill})
+${symbol_pound}else
+    @TableField(fill = FieldFill.${symbol_dollar}{field.fill})
+${symbol_pound}end
+${symbol_pound}elseif(${symbol_dollar}{field.convert})
+    @TableField("${symbol_dollar}{field.name}")
+${symbol_pound}end
+${symbol_pound}${symbol_pound} 乐观锁注解
+${symbol_pound}if(${symbol_dollar}{versionFieldName}==${symbol_dollar}{field.name})
+@Version
+${symbol_pound}end
+${symbol_pound}${symbol_pound} 逻辑删除注解
+${symbol_pound}if(${symbol_dollar}{logicDeleteFieldName}==${symbol_dollar}{field.name})
+    @TableLogic
+${symbol_pound}end
+    private ${symbol_dollar}{field.propertyType} ${symbol_dollar}{field.propertyName};
+${symbol_pound}end
+${symbol_pound}${symbol_pound} ----------  END 字段循环遍历  ----------
+
+${symbol_pound}if(!${symbol_dollar}{entityLombokModel})
+${symbol_pound}foreach(${symbol_dollar}field in ${symbol_dollar}{table.fields})
+${symbol_pound}if(${symbol_dollar}{field.propertyType.equals("boolean")})
+${symbol_pound}set(${symbol_dollar}getprefix="is")
+${symbol_pound}else
+${symbol_pound}set(${symbol_dollar}getprefix="get")
+${symbol_pound}end
+
+    public ${symbol_dollar}{field.propertyType} ${symbol_dollar}{getprefix}${symbol_dollar}{field.capitalName}(){
+        return ${symbol_dollar}{field.propertyName};
+    }
+
+${symbol_pound}if(${symbol_dollar}{entityBuilderModel})
+    public ${symbol_dollar}{entity} set${symbol_dollar}{field.capitalName}(${symbol_dollar}{field.propertyType} ${symbol_dollar}{field.propertyName}) {
+${symbol_pound}else
+    public void set${symbol_dollar}{field.capitalName}(${symbol_dollar}{field.propertyType} ${symbol_dollar}{field.propertyName}) {
+${symbol_pound}end
+        this.${symbol_dollar}{field.propertyName} = ${symbol_dollar}{field.propertyName};
+${symbol_pound}if(${symbol_dollar}{entityBuilderModel})
+        return this;
+${symbol_pound}end
+    }
+${symbol_pound}end
+${symbol_pound}end
+${symbol_pound}if(${symbol_dollar}{entityColumnConstant})
+${symbol_pound}foreach(${symbol_dollar}field in ${symbol_dollar}{table.fields})
+    public static final String ${symbol_dollar}{field.name.toUpperCase()} = "${symbol_dollar}{field.name}";
+${symbol_pound}end
+${symbol_pound}end
+${symbol_pound}if(${symbol_dollar}{activeRecord})
+@Override
+protected Serializable pkVal() {
+${symbol_pound}if(${symbol_dollar}{keyPropertyName})
+return this.${symbol_dollar}{keyPropertyName};
+${symbol_pound}else
+return null;
+${symbol_pound}end
+}
+${symbol_pound}end
+${symbol_pound}if(!${symbol_dollar}{entityLombokModel})
+@Override
+public String toString() {
+return "${symbol_dollar}{entity}{" +
+${symbol_pound}foreach(${symbol_dollar}field in ${symbol_dollar}{table.fields})
+${symbol_pound}if(${symbol_dollar}!{velocityCount}==1)
+"${symbol_dollar}{field.propertyName}=" + ${symbol_dollar}{field.propertyName} +
+${symbol_pound}else
+", ${symbol_dollar}{field.propertyName}=" + ${symbol_dollar}{field.propertyName} +
+${symbol_pound}end
+${symbol_pound}end
+"}";
+}
+${symbol_pound}end
+}

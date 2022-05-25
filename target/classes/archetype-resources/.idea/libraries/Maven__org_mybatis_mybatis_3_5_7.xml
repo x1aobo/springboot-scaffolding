@@ -1,0 +1,16 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<component name="libraryTable">
+  <library name="Maven: org.mybatis:mybatis:3.5.7">
+    <CLASSES>
+      <root url="jar://${symbol_dollar}PROJECT_DIR${symbol_dollar}/../../../maven/repo/org/mybatis/mybatis/3.5.7/mybatis-3.5.7.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://${symbol_dollar}PROJECT_DIR${symbol_dollar}/../../../maven/repo/org/mybatis/mybatis/3.5.7/mybatis-3.5.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://${symbol_dollar}PROJECT_DIR${symbol_dollar}/../../../maven/repo/org/mybatis/mybatis/3.5.7/mybatis-3.5.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
