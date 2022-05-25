@@ -1,4 +1,4 @@
-# springboot-scaffolding（springboot项目脚手架）
+# springboot项目脚手架
 
 #### 下载脚手架后需要执行以下操作：
 ##### 1、安装项目脚手架，执行命令：
